@@ -1,4 +1,10 @@
 'use-strict';
+
+const loader = document.querySelector(".pre-loader");
+function preLoader() {
+    loader.style.display = 'none';
+}
+
 let secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
 console.log(secretNumber);
 
