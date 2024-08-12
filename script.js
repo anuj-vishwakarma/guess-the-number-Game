@@ -74,15 +74,17 @@ document.querySelector(".check-btn").addEventListener("click", function () {
         document.querySelector(".alert").innerHTML = "⛔ Wrong Input";
     }
 
-    document.querySelector(".play-again").addEventListener("click", function () {
-        secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
-        score = 20;
-        displayMessage(".score", '💯 Score: 0');
-        displayMessage(".alert", "🤔 Start guessing...");
-        document.querySelector(".guess").value = "";
-        document.querySelector(".correct-answer").innerHTML = '0';
-        document.querySelector("body").style.backgroundColor = 'rgb(29, 29, 29)';
-        document.querySelector("html").style.backgroundColor = 'rgb(29, 29, 29)';
-    })
-})
+
+});
+
+document.querySelector(".play-again").addEventListener("click", function () {
+    secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
+    score = 20;
+    displayMessage(".score", '💯 Score: 20');
+    displayMessage(".alert", "🤔 Start guessing...");
+    document.querySelector(".correct-answer").innerHTML = '?';
+    document.querySelector(".guess").value = "";
+    document.querySelector("body").style.backgroundColor = 'rgb(29, 29, 29)';
+    document.querySelector("html").style.backgroundColor = 'rgb(29, 29, 29)';
+});
 
