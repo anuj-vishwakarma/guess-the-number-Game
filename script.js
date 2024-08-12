@@ -2,7 +2,9 @@
 
 const loader = document.querySelector(".pre-loader");
 function preLoader() {
-    loader.style.display = 'none';
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 1100);
 }
 
 let secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
