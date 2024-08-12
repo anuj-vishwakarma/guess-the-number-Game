@@ -79,6 +79,7 @@ document.querySelector(".check-btn").addEventListener("click", function () {
         score = 20;
         displayMessage(".score", '💯 Score: 0');
         displayMessage(".alert", "🤔 Start guessing...");
+        document.querySelector(".guess").value = "";
         document.querySelector(".correct-answer").innerHTML = '0';
         document.querySelector("body").style.backgroundColor = 'rgb(29, 29, 29)';
         document.querySelector("html").style.backgroundColor = 'rgb(29, 29, 29)';
