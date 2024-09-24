@@ -15,7 +15,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: black url("./preloader.gif") no-repeat center;
+  background: black url("https://giphy.com/gifs/loading-slow-wanderson-cnzP4cmBsiOrccg20V") no-repeat center;
   z-index: 999999;
 }
 
